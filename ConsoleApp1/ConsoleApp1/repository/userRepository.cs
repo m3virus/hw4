@@ -30,7 +30,22 @@ namespace ConsoleApp1.repository
 
         }
 
-       
+        public void RemoveUser(int Id)
+        {
+            List<users> user = files.load();
+
+            foreach (users find in user)
+            {
+                if (find.ID == Id)
+                {
+                    user.Remove(find);
+                    break;
+                }
+            }
+            files.save(user);
+        }
+
+        
 
 
 
