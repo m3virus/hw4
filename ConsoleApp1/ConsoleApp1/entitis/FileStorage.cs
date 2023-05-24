@@ -67,6 +67,25 @@ namespace ConsoleApp1.entitis
                 return false;
             }
         }
-        
+        public bool save(List<users> user)
+        {
+            try
+            {
+                FileStream FileOpener = new FileStream(address, FileMode.Create);
+                FileOpener.Close();
+                foreach (users i in user)
+                {
+                    string builder = i.ToString();
+                    File.AppendAllText(address, builder + "\n");
+                }
+                
+                
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
