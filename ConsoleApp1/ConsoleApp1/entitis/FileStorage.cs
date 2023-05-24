@@ -29,8 +29,8 @@ namespace ConsoleApp1.entitis
                     user.ID = int.Parse(UserInformation[0]);
                     user.Name = UserInformation[1];
                     user.PhoneNumber = UserInformation[2];
-                    user.Birthday = DateTime.Parse(UserInformation[3]);
-                    user.entry = DateTime.Parse(UserInformation[4]);
+                    user.Birthday = UserInformation[3];
+                    user.entry = UserInformation[4];
 
                     UserList.Add(user);
 
