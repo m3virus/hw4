@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ConsoleApp1.models
 {
-    class users
+    public class users
     {
+        
         public int ID { get; set; }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
