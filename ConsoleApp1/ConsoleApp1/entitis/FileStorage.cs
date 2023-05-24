@@ -10,7 +10,7 @@ namespace ConsoleApp1.entitis
 {
     public class FileStorage
     {
-        string address = @"\hw4\ConsoleApp1\FileDataStorage.csv";
+        string address = @"FileDataStorage.csv";
 
         public List<users> load()
         {

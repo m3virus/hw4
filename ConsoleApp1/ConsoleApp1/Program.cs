@@ -27,6 +27,7 @@ namespace ConsoleApp1
             UserRepository users = new UserRepository(files);
             do
             {
+                
                 form();
                 status = int.Parse(Console.ReadLine());
 
@@ -57,7 +58,10 @@ namespace ConsoleApp1
                     default:
                         break;
 
+                        
+
                 }
+                
 
             } while (status != 4);
 

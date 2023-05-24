@@ -10,7 +10,7 @@ namespace ConsoleApp1.repository
 {
     public class UserRepository : IUserRepository
     {
-        static int id = 1;
+        int id = 1;
         
         FileStorage files;
         public UserRepository(FileStorage values)
