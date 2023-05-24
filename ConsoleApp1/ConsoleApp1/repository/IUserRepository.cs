@@ -10,8 +10,9 @@ namespace ConsoleApp1.repository
 {
     public interface IUserRepository
     {
-         List<users> AddUser(string name, string phonenumber, DateTime birthday);
-         List<users> RemoveUser(int Id);
+         void AddUser(string name, string phonenumber, DateTime birthday);
+         void RemoveUser(int Id);
+         void GetAllUserList();
 
 
     }

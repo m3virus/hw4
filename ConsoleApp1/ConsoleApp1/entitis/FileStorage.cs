@@ -8,7 +8,7 @@ using ConsoleApp1.models;
 
 namespace ConsoleApp1.entitis
 {
-    class FileStorage
+    public class FileStorage
     {
         string address = @"\hw4\ConsoleApp1\FileDataStorage.csv";
 
