@@ -17,9 +17,15 @@ namespace ConsoleApp1.repository
         {
             files = values;
         }
-
+        users user;
         public List<users> AddUser(string name, string phonenumber, DateTime birthday)
         {
+            user.ID = id;
+            id++;
+            user.Name = Console.ReadLine();
+            user.PhoneNumber = Console.ReadLine();
+            user.Birthday = DateTime.Parse(Console.ReadLine());
+            user.entry = DateTime.Now;
             throw new NotImplementedException();
         }
 
