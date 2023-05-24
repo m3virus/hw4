@@ -18,7 +18,7 @@ namespace ConsoleApp1.repository
             files = values;
         }
         users user;
-        public List<users> AddUser(string name, string phonenumber, DateTime birthday)
+        public void AddUser(string name, string phonenumber, DateTime birthday)
         {
             user.ID = id;
             id++;
@@ -29,7 +29,7 @@ namespace ConsoleApp1.repository
             throw new NotImplementedException();
         }
 
-        public List<users> RemoveUser(int Id)
+        public void RemoveUser(int Id)
         {
             throw new NotImplementedException();
         }
