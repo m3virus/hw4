@@ -17,7 +17,11 @@ namespace ConsoleApp1.repository
         {
             files = values;
         }
+<<<<<<< HEAD
         users user;
+=======
+        users user = new users();
+>>>>>>> removeusers
         public void AddUser(string name, string phonenumber, DateTime birthday)
         {
             user.ID = id;
@@ -26,24 +30,40 @@ namespace ConsoleApp1.repository
             user.PhoneNumber = Console.ReadLine();
             user.Birthday = DateTime.Parse(Console.ReadLine());
             user.entry = DateTime.Now;
-            throw new NotImplementedException();
+            files.save(user);
+
         }
 
         public void RemoveUser(int Id)
         {
-            throw new NotImplementedException();
+            List<users> user = files.load();
+
+            foreach (users find in user)
+            {
+                if (find.ID == Id)
+                {
+                    user.Remove(find);
+                    break;
+                }
+            }
+            files.save(user);
         }
         public void GetAllUserList()
         {
 
             List<users> allUsers = files.load();
 
+<<<<<<< HEAD
             foreach (users key in allUsers)
             {
                 Console.WriteLine(key);
             }
 
         }
+=======
+        
+
+>>>>>>> removeusers
 
 
         // adduser(name , phone , birth) -> users , id , entry -> files.save()
