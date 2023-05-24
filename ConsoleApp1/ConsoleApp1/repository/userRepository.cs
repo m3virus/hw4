@@ -33,7 +33,17 @@ namespace ConsoleApp1.repository
         {
             throw new NotImplementedException();
         }
+        public void GetAllUserList()
+        {
 
+            List<users> allUsers = files.load();
+
+            foreach (users key in allUsers)
+            {
+                Console.WriteLine(key);
+            }
+
+        }
 
 
         // adduser(name , phone , birth) -> users , id , entry -> files.save()
