@@ -8,6 +8,20 @@ namespace ConsoleApp1.models
 {
     class users
     {
-        
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string PhoneNumber { get; set; }
+        public DateTime Birthday { get; set; }
+        public DateTime entry { get; set; }
+
+        public override string ToString()
+        {
+            return $"{ID},{Name},{PhoneNumber},{Birthday.ToString()},{entry.ToString()}";
+        }
+
+
     }
+    
+
+
 }
