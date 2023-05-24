@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.repository
 {
-    class IUserRepository
+    public interface IUserRepository <T> where T:class
     {
     }
 }
