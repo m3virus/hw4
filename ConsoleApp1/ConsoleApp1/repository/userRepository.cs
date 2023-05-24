@@ -19,14 +19,14 @@ namespace ConsoleApp1.repository
         }
 
         users user = new users();
-        public void AddUser(string name, string phonenumber, DateTime birthday)
+        public void AddUser(string name, string phonenumber, string birthday)
         {
             user.ID = id;
             id++;
-            user.Name = Console.ReadLine();
-            user.PhoneNumber = Console.ReadLine();
-            user.Birthday = DateTime.Parse(Console.ReadLine());
-            user.entry = DateTime.Now;
+            user.Name = name;
+            user.PhoneNumber = phonenumber;
+            user.Birthday = birthday;
+            user.entry = DateTime.Now.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss");
             files.save(user);
 
         }

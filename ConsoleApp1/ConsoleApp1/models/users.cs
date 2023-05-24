@@ -13,8 +13,8 @@ namespace ConsoleApp1.models
         public int ID { get; set; }
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
-        public DateTime Birthday { get; set; }
-        public DateTime entry { get; set; }
+        public string Birthday { get; set; }
+        public string entry { get; set; }
 
         public override string ToString()
         {
