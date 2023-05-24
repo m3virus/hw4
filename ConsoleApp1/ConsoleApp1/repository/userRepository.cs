@@ -17,8 +17,8 @@ namespace ConsoleApp1.repository
         {
             files = values;
         }
-        users user;
-        public List<users> AddUser(string name, string phonenumber, DateTime birthday)
+        users user = new users();
+        public void AddUser(string name, string phonenumber, DateTime birthday)
         {
             user.ID = id;
             id++;
@@ -26,13 +26,11 @@ namespace ConsoleApp1.repository
             user.PhoneNumber = Console.ReadLine();
             user.Birthday = DateTime.Parse(Console.ReadLine());
             user.entry = DateTime.Now;
-            throw new NotImplementedException();
+            files.save(user);
+
         }
 
-        public List<users> RemoveUser(int Id)
-        {
-            throw new NotImplementedException();
-        }
+       
 
 
 
