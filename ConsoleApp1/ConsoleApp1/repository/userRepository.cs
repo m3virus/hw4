@@ -17,11 +17,8 @@ namespace ConsoleApp1.repository
         {
             files = values;
         }
-<<<<<<< HEAD
-        users user;
-=======
+
         users user = new users();
->>>>>>> removeusers
         public void AddUser(string name, string phonenumber, DateTime birthday)
         {
             user.ID = id;
@@ -53,17 +50,13 @@ namespace ConsoleApp1.repository
 
             List<users> allUsers = files.load();
 
-<<<<<<< HEAD
             foreach (users key in allUsers)
             {
                 Console.WriteLine(key);
             }
 
         }
-=======
-        
 
->>>>>>> removeusers
 
 
         // adduser(name , phone , birth) -> users , id , entry -> files.save()
